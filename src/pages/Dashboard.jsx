@@ -82,7 +82,7 @@ export default function Dashboard() {
           </div>
           <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </div>
-        <CommentTable comments={paginated} sortConfig={{ key: sortKey, direction: sortOrder }} onSort={() => {}} />
+        <CommentTable comments={paginated} />
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
